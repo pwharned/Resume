@@ -45,7 +45,7 @@
 \RequirePackage{marvosym}
 \RequirePackage{graphicx}
 \RequirePackage[x11names]{xcolor}
-\RequirePackage[thin]{roboto}
+\RequirePackage{roboto}
 \RequirePackage[T1]{fontenc}
 
 \pagestyle{empty}
@@ -55,7 +55,8 @@
 % Allow use of if statements
 \RequirePackage{etoolbox}
 \RequirePackage{xstring}
-
+\RequirePackage{enumitem}
+\setlist{nosep}
 
 % Set up whether sections align to the left or right
 \def\SectionAlignment{flushleft}
@@ -555,8 +556,7 @@
  \def\asix{#6}
  
 % \begin{samepage}
- 	\vspace{-1.5em}
-\rmfamily
+ 	\vspace{-0.5em}
  	\vspace{-1em}
  
  \begin{itemize}
@@ -603,13 +603,13 @@
 
   \iftoggle{jobfirst}{
 	% Display job before company	
-	\begin{tabular}{@{}p{3cm} l}
-		\textbf{#1}      & \textbf{#2} (#3)\\
+	\begin{tabular}{@{}p{1cm} l}
+		#1      & #2 (#3)\\
 	\end{tabular}
 }
 {
 	% Display company before job
-	\begin{tabular}{@{}p{3cm} l}
+	\begin{tabular}{@{}p{1cm} l}
 		\textbf{#1} & \textbf{#3} (#2)\\
 	\end{tabular}
 }  

@@ -37,6 +37,7 @@
 \setYourJobTitle{Data Scientist/ML Engineer}
 \setYourMobileNo{347-263-0441}
 \setYourEmailAddr{pwharned@gmail.com}
+\setYourWebAddr{pwharned.github.io/Resume/}
 
 % Display header information 
 \showHeader
@@ -46,7 +47,7 @@
 
 % Creates a new section title / heading
 
-\personalStatement{Machine Learning Engineer and Data Scientist with experience building end-to-end containerized analytics and machine learning applications.}
+\personalStatement{Machine Learning Engineer and Data Scientist with experience building end-to-end containerized analytics and AI applications. Extensive knowledge of embedded database programming, database optimization, cloud-native development and Hadoop.}
 
 \newHeading{Competencies}
 
@@ -58,9 +59,9 @@
 		  {C/C++}
 		  {SQL}
 		  {Linux}
-		  {Machine Learning}
+		  {IBM Cloud/AWS}
 		  {Docker/Kubernetes/Openshift}
-		  {Spark/Hadoop}
+		  {Hadoop}
 		  
 \newHeading{Career Summary}
 
@@ -76,25 +77,26 @@
 \newRole{2021 -- present}
         {Data Scientist}
         {IBM Expert Labs}
-        {Build and deploy AI solutions leveraging IBM Cloud Paks and Red Hat Openshift. Architect cloud-based solutions for enterprise clients.}
+        {Build and deploy cloud-native AI solutions on IBM Cloud Paks and Red Hat Openshift for enterprise clients.}
+        \newline
 
 
-\roleAchievements{Develop end-to-end model risk management solutions for AI based applications. Develop and deploy Spark applications for MRM on high volume ML models. }
-{Develop Kerberos authentication API for connecting Hadoop environments to support batch scoring of Spark models}
-{Developed Scala APIs for exposing NOSQL datastores to visualization layers for multi-cloud provider Openshift deployment application.}
+\roleAchievements{Develop end-to-end model risk management solutions for AI based applications. Develop and deploy Spark applications for MRM on high volume ML models.}
+{Develop Kerberos authentication API for authenticating containerized Spark jobs to remote Hadoop environments (Hive, HDFS) to support batch scoring of Spark models.}
+{Developed Scala APIs for exposing NoSQL datastores to visualization layers to provide analytics to LOB for OCP cluster provisioning application.}
 {Designed stress tests for containerized MRM applications - identified and closed application performance gaps.}
-{Developed scalable LIME Explainability modules for producing local model explanations at scale.}
-{Developed accerators for MRM applications to speed client integrations and in-database machine learning routines for DB2}
+{Developed embdedded database applications for performing embdedded database machine learning to support model drift and explainabilty analysis on federated data.}
+{Developed Gitops workflows with ArgoCD/Terraform to automate provisioning of Openshift clusters and application deployments.}
 
 
 \newRole{2019 -- 2020}
 {Data Scientist}
 {IBM Cloud Pak Acceleration Team}
-{Build AI solutions on IBM Cloud Paks and Openshift.}
+{Build AI solutions on IBM Cloud Paks and Openshift. Deploy to various cloud providers (AWS/Azure/IBM Cloud)}
 
-\roleAchievementsthree{Implement containerized  software solutions for ML project including automated model deployment and risk management.  }
-{Built and deploy Spark MLLib pipelines to analyze customer churn.}
-{Develop containerized database operators in Scala.}
+\roleAchievementsthree{Developed federated DB2 data warehouse for merging JSON and tabular data source from external APIs and remote databases (Hive, MySQL, Postgres).}
+{Developed Scala and Python microservices for integrating analytics applications with federated authentication services.}
+{Developed and deployed custom ML models (Scala/Akka) for customer ranking and churn prediction.}
 
 
 \newRole{2018 -- 2019}
@@ -114,8 +116,8 @@
 % School education
 \newHeading{Education}
          
-\newCourse{2016 - 2019}{Dual Masters of Global Policy Studies and Middle Eastern Studies}{University of Texas at Austin}{}
-\newCourse{2012 - 2015}{Bachelors of Arts, Classical Langauges}{Hunter College, City University of New York}{}
+\newCourse{2019}{Dual Masters of Global Policy Studies and Middle Eastern Studies}{University of Texas at Austin}{}
+\newCourse{2015}{Bachelors of Arts, Classical Langauges}{Hunter College, City University of New York}{}
 
 \newHeading{Languages}
 \addLanguages{Native English, Professional Fluency in Arabic,}
