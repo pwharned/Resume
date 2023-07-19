@@ -45,7 +45,7 @@
 \RequirePackage{marvosym}
 \RequirePackage{graphicx}
 \RequirePackage[x11names]{xcolor}
-\RequirePackage[thin]{roboto}
+\RequirePackage[light]{roboto}
 \RequirePackage[T1]{fontenc}
 
 \pagestyle{empty}
