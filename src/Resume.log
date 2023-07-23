@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.4.26)  29 JUL 2022 11:55
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.4.26)  2 DEC 2022 09:34
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1293,7 +1293,7 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@count@id=\count376
 \enitdp@description=\count377
 ))
-(/usr/local/Cellar/r/4.2.1/lib/R/share/texmf/tex/latex/Sweave.sty
+(/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/Sweave.sty
 Package: Sweave 
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
@@ -1486,7 +1486,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--83
 
 [1
 
-] (./Resume.aux)
+] [2] (./Resume.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1495,11 +1495,11 @@ Package rerunfilecheck Info: File `Resume.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  18009 strings out of 476179
- 337338 string characters out of 5809544
- 751770 words of memory out of 5000000
+ 337368 string characters out of 5809544
+ 753770 words of memory out of 5000000
  38495 multiletter control sequences out of 15000+600000
  476758 words of font info for 79 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 103i,10n,126p,989b,319s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,10n,126p,989b,320s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Resume.pdf (1 page).
+Output written on Resume.pdf (2 pages).
