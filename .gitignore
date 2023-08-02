@@ -40,3 +40,9 @@ vignettes/*.pdf
 DS_Store
 .DS_Store
 .Rproj.user
+resume.Rproj
+*.Rproj
+*.gz
+*-concordance.tex
+*.log
+cover-letters
