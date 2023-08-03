@@ -1,6 +1,7 @@
 % Change the size of the paper your CV will be printed on
 % by entering either a4paper or letterpaper here.
 \documentclass[a4paper]{Resume}
+\usepackage[fontsize=9pt]{fontsize}
 
 \usepackage[x11names]{xcolor}
 % Set color of body text
@@ -48,7 +49,7 @@
 
 \personalStatement{Machine Learning Engineer and Data Scientist with experience building end-to-end containerized analytics and machine learning applications.}
 
-\newHeading{Competencies}
+\newHeading{Skills}
 
 % Add up to nine core skills. If they are
 % all not needed use {} instead.
@@ -76,15 +77,17 @@
 \newRole{2021 -- present}
         {Data Scientist}
         {IBM Expert Labs}
-        {Build and deploy AI solutions leveraging IBM Cloud Paks and Red Hat Openshift. Architect cloud-based solutions for enterprise clients.}
+        {Post-sales Technical Specialist and Delivery Architect for IBM Expert Labs. Design and deploy analytics, data warehousing and AI applications.}
 
 
-\roleAchievements{Develop end-to-end model risk management solutions for AI based applications. Develop and deploy Spark applications for MRM on high volume ML models. }
-{Develop Kerberos authentication API for connecting Hadoop environments to support batch scoring of Spark models}
-{Developed Scala APIs for exposing NOSQL datastores to visualization layers for multi-cloud provider Openshift deployment application.}
-{Designed stress tests for containerized MRM applications - identified and closed application performance gaps.}
-{Developed scalable LIME Explainability modules for producing local model explanations at scale.}
-{Developed accerators for MRM applications to speed client integrations and in-database machine learning routines for Db2}
+\roleAchievements
+{Leveraged WatsonX LLMs to develop analytics engine using human language to answer business questions based on complex sales data.}
+{Lead design, development and deployment of enterprise AI model risk management solutions for large retailer.}
+{Scaled data warehousing and analytics solution for commercial bank, reducing cost and providing increased throughput and reliability.}
+{Developed novel ML based algorithms for auditing model behavior, improving compliance.}
+{Lead modernization effort to improve performance of analytics and model deployment leveraging embedded SQL programming to lower infrastructure costs and improve model development time.}
+{Developed and deployed containerized spark application for analyzing billions of historical transactions.}
+
 
 
 \newRole{2019 -- 2020}
