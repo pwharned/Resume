@@ -1,0 +1,135 @@
+% Change the size of the paper your CV will be printed on
+% by entering either a4paper or letterpaper here.
+\documentclass[a4paper]{Resume}
+
+\usepackage[x11names]{xcolor}
+% Set color of body text
+\color{black}
+
+\usepackage{Sweave}
+\begin{document}
+\input{Resume-concordance}
+	
+% Set page colour using X11names colour definitions
+\setPageColour{white}
+
+% Set header details being aligned to the right or left
+% If an image is displayed it will be shown on the
+% opposite side to what is set here.
+\setHeaderAlignment{left}
+
+% Set colour of all headings, header highlights
+\setHeadingColours{SlateGray3}
+
+% Set image file to be displayed in header
+% If left blank no image is displayed
+%\setImage{profilepic.jpg}
+
+% If image not being displayed then user can
+% move contact details to opposite side of
+% page to name and jobtitle.
+% Use either opposite or below
+\setContactLocation{opposite}
+
+% Set up information needed for header.
+% If you do not want to include certain
+% information use {} instead. 
+\setYourName{Patrick Harned}
+\setYourJobTitle{Data Scientist/ML Engineer}
+\setYourMobileNo{347-263-0441}
+\setYourEmailAddr{pwharned@gmail.com}
+\setYourWebAddr{pwharned.github.io/Resume/}
+
+% Display header information 
+\showHeader
+
+% Set up whether section headings are on the left or right
+\setSectionAlignment{left}
+
+% Creates a new section title / heading
+
+\personalStatement{Machine Learning Engineer and Data Scientist with experience building end-to-end containerized analytics and AI applications. Extensive knowledge of embedded database programming, database optimization, cloud-native development and Hadoop.}
+
+\newHeading{Competencies}
+
+% Add up to nine core skills. If they are
+% all not needed use {} instead.
+\addSkills{Scala}
+		  {Python}
+		  {R}
+		  {C/C++}
+		  {SQL}
+		  {Linux}
+		  {IBM Cloud/AWS}
+		  {Docker/Kubernetes/Openshift}
+		  {Hadoop}
+		  
+\newHeading{Career Summary}
+
+% Set up whether job title or company printed first
+% Either use JobFirst or CompanyFirst
+\setJobCompanyOrder{JobFirst}
+
+% This displays the whole of the role information
+% including dates [1], job title [2],
+% company name [3] and role summary [4]
+% If a full history is required use \newrole and \roleAchievements
+% If only a brief description needed then just use \newrole
+\newRole{2021 -- present}
+        {Data Scientist}
+        {IBM Expert Labs}
+        {Build and deploy cloud-native AI solutions on IBM Cloud Paks and Red Hat Openshift for enterprise clients.}
+        \newline
+
+
+\roleAchievements{Develop end-to-end model risk management solutions for AI based applications. Develop and deploy Spark applications for MRM on high volume ML models.}
+{Develop Kerberos authentication API for authenticating containerized Spark jobs to remote Hadoop environments (Hive, HDFS) to support batch scoring of Spark models.}
+{Developed Scala APIs for exposing NoSQL datastores to visualization layers to provide analytics to LOB for OCP cluster provisioning application.}
+{Designed stress tests for containerized MRM applications - identified and closed application performance gaps.}
+{Developed embdedded database applications for performing embdedded database machine learning to support model drift and explainabilty analysis on federated data.}
+{Developed Gitops workflows with ArgoCD/Terraform to automate provisioning of Openshift clusters and application deployments.}
+
+
+\newRole{2019 -- 2020}
+{Data Scientist}
+{IBM Cloud Pak Acceleration Team}
+{Build AI solutions on IBM Cloud Paks and Openshift. Deploy to various cloud providers (AWS/Azure/IBM Cloud)}
+
+\roleAchievementsthree{Developed federated DB2 data warehouse for merging JSON and tabular data source from external APIs and remote databases (Hive, MySQL, Postgres).}
+{Developed Scala and Python microservices for integrating analytics applications with federated authentication services.}
+{Developed and deployed custom ML models (Scala/Akka) for customer ranking and churn prediction.}
+
+
+\newRole{2018 -- 2019}
+{Data Specialist}
+{Princeton University}
+{Assist research team in producing visualizations, data validation and data quality pipelines, and conducting statistical analysis of Arab Barometer survey data.}
+
+\roleAchievementsthree{Design and deploy data quality monitoring pipelines in R and Python.}
+{Build pipleines for cleanining and managing Arab Barometer survey data to support automated data cleaning.}
+{Build dashboards, reporting and analytics pipelines. Conducted statistical analysis of Arab Barometer data and contributed to research.}
+
+
+% move, duplicate, delete or comment out the following line if necessary
+% This is training you have done in your own time
+
+
+% School education
+\newHeading{Education}
+         
+\newCourse{2019}{Dual Masters of Global Policy Studies and Middle Eastern Studies}{University of Texas at Austin}{}
+\newCourse{2015}{Bachelors of Arts, Classical Langauges}{Hunter College, City University of New York}{}
+
+\newHeading{Languages}
+\addLanguages{Native English, Professional Fluency in Arabic,}
+		  {Conversational  in Japanese,}
+		  {German,}
+		  {French and}
+		  {Turkish}
+          
+\clearpage
+
+
+ 
+
+\end{document}

@@ -27,8 +27,8 @@
 \ProcessOptions\relax
 \LoadClass[10pt, onecolumn, oneside]{memoir}
 
-\setlrmarginsandblock{1.5cm}{1.5cm}{*}
-\setulmarginsandblock{1.5cm}{*}{*}
+\setlrmarginsandblock{1cm}{1cm}{*}
+\setulmarginsandblock{1cm}{*}{*}
 \checkandfixthelayout
 
 
@@ -50,7 +50,7 @@
 
 \pagestyle{empty}
 %\setlength{\parindent}{0em}
-\addtolength{\parskip}{1pt}
+\addtolength{\parskip}{6pt}
 
 % Allow use of if statements
 \RequirePackage{etoolbox}
@@ -442,7 +442,7 @@
 	\def\sseven{#7}
 	\def\seight{#8}
 	\def\snine{#9}
-
+	
 	\begin{multicols}{3}
 		\begin{itemize}
 			\ifdefempty{\sone}{}{\item \sone}
@@ -457,10 +457,6 @@
 		\end{itemize}
 	\end{multicols}
 }
-
-
-
-
 
 \newcommand{\addLanguages}[5]{
 	\def\sone{#1}
