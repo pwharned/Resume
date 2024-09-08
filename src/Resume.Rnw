@@ -34,10 +34,10 @@
 % If you do not want to include certain
 % information use {} instead. 
 \setYourName{Patrick Harned}
-\setYourJobTitle{Technical Solution Architect/Full Stack Enginner}
+\setYourJobTitle{Data Scientist/Machine Learning Engineer}
 \setYourMobileNo{347-263-0441}
 \setYourEmailAddr{pwharned@gmail.com}
-\setYourWebAddr{pwharned.github.io/Resume/}
+\setYourWebAddr{pwharned.github.io}
 
 % Display header information 
 \showHeader
@@ -47,7 +47,7 @@
 
 % Creates a new section title / heading
 
-\personalStatement{I am a Solutions Architect and Full Stack Engineer with experience building end-to-end ML solutions for clients.}
+\personalStatement{I am a Data Scientist and Machine Learning Engineer with a passion for NLP and performance computing.}
 
  \newHeading{}
 
@@ -114,28 +114,20 @@
 % company name [3] and role summary [4]
 % If a full history is required use \newrole and \roleAchievements
 % If only a brief description needed then just use \newrole
-\newRole{2021 -- present}
+\newRole{2019 -- present}
         {Data Scientist}
         {IBM Expert Labs}
-        {Build and deploy cloud-native AI solutions on IBM Cloud Paks and Red Hat Openshift for enterprise clients. Collaborate with product management and various stakeholders across IBM and enterprise clients to build high value add solutions and drive AI adoption.}
+        {Develop and deploy novel AI solutions.}
         \newline
 
 
-\roleAchievements{Led development of Retrieval-Augmented Generation powered customer support agent using IBM Granite foundation Models. Integrated GoLang backend with ElasticSearch vector database to support multimedia search and automated FAQ generation. Integrated IBM Carbon React  front\-end interface with IBM Sterling OMS and Watson Assistant. Developed comprhensive testing framework for LLM prompt validation and tuning. }
-{Implemented GPU monitoring platform for tracking LLM workloads on on-prem NVIDIA hardware using Prometheus, Db2, Scala and WatsonX integrations.}
-{Train and deploy BERT entity-extraction models to automate coding for clinical pathways program. Drove automation of clinical tasks with improved accuracy for NHS partner hospitals.}
-{Develop applications for performing embdedded database machine learning to support model drift and explainabilty analysis on federated data. Collaborate with UIX teams to distill complex findings into actionable insights. }
-{Develop federated data platform for tracking bias across machine learning models deployed to Google Cloud using Watson Query and React. }
+\roleAchievements{Developed monitoring platform for LLM workloads on NVIDIA GPUs.}
+{Develop and research novel techniques for improving computational efficiency of LLM training and inferencing. Develop high performance inferencing engine for LLMs.}
+{Fine tune geospatial foundation models and Large Langage Models (LLMS) on proprietary data.}
+{Develop high throuput C++ applications for performing embdedded database machine learning to support model drift and explainabilty analysis on federated data. }
+{Develop federated data platform for tracking bias across machine learning models deployed to Google Cloud. }
+{Research applicability of LLMs in machine translation. }
 
-
-\newRole{2019 -- 2020}
-{Data Scientist}
-{IBM Cloud Pak Acceleration Team}
-{Build AI solutions on IBM Cloud Paks and Openshift. Deploy to various cloud providers (AWS/Azure/IBM Cloud)}
-
-\roleAchievementsthree{Developed federated DB2 data warehouse for merging JSON and tabular data source from external APIs and remote databases (Hive, MySQL, Postgres).}
-{Developed Scala and Python microservices for integrating analytics applications with federated authentication services. Developed federated data platform in Db2 for tracking performance of ML models for large retailer.}
-{Proposed and implemented ML driven solutions for tracking COVID data for public client. Produced human-readable visualizations of model predictions to enabled stakeholder action. Manage enterprise Openshift and Cloud Pak for Data clusters.}
 
 
 \newRole{2018 -- 2019}
