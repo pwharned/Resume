@@ -1,3 +1,4 @@
+
 %% Resume
 %% Copyright 2021 Philip Stone
 %
@@ -10,7 +11,7 @@
 % version 2005/12/01 or later.
 %
 % This work has the LPPL maintenance status `maintained'.
-% 
+%
 % The Current Maintainer of this work is Philip Stone
 %
 % This work consists of the files Resume.cls and Resume.tex
@@ -25,10 +26,11 @@
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{memoir}}
 \ExecuteOptions{a4paper}
 \ProcessOptions\relax
-\LoadClass[10pt, onecolumn, oneside]{memoir}
+\LoadClass[8pt, onecolumn, oneside]{memoir}
 
-\setlrmarginsandblock{1.5cm}{1.5cm}{*}
-\setulmarginsandblock{1.5cm}{*}{*}
+\setlrmarginsandblock{0.8cm}{0.8cm}{*}
+\setulmarginsandblock{1.0cm}{*}{*}
+\setheadfoot{8pt}{10pt}  % Add this line - reduces header and footer space
 \checkandfixthelayout
 
 
@@ -41,7 +43,7 @@
 % Allow use of multiple columns
 \RequirePackage{multicol}
 
-% Support for graphics, fonts and colour 
+% Support for graphics, fonts and colour
 \RequirePackage{marvosym}
 \RequirePackage{graphicx}
 \RequirePackage[x11names]{xcolor}
@@ -90,7 +92,6 @@
   \pagecolor{\PageColour}
 }
 
-
 % Define left or right aligned header
 % Can be either 'left' or 'right'
 \def\HeaderAlignment{flushright}
@@ -118,12 +119,12 @@
 \def\rcvwebaddr{}
 
 \newcommand{\HeaderText}{
- 
+
   \noindent\begin{minipage}{1.0\linewidth}
 	\begin{\HeaderAlignment}
        \textcolor{\HeadingColour}{\robotoThin{\textbf{\Huge{\rcvname}}}}\\
-	   \robotoThin{\LARGE{\rcvjobtitle}}\\ 
-			
+	   \robotoThin{\LARGE{\rcvjobtitle}}\\
+
 	   \ifdefempty{\rcvmobileno}%
 	   {
      	%if mobile number not defined
@@ -147,8 +148,8 @@
 		 %if home number and mobile number defined
 		 \robotoThin{\normalsize{\textcolor{\HeadingColour}{\Mobilefone}\ \rcvmobileno\ {\textcolor{\HeadingColour}{\Telefon}\ \rcvhomeno\\}}
 		}}
-	   }	
-	
+	   }
+
 	   \ifdefempty{\rcvemailaddr}%
 	   {
 		\ifdefempty{\rcvwebaddr}%
@@ -178,11 +179,11 @@
 
 \newcommand{\HeaderRightContact}{
   % Name and jobtitle on the left. Contact details on the right.
- 
+
   \noindent\begin{minipage}{0.5\linewidth}
   	\begin{flushleft}
   		\textcolor{\HeadingColour}{\robotoThin{\textbf{\Huge{\rcvname}}}}\\
-  		\robotoThin{\LARGE{\rcvjobtitle}}\\ 
+  		\robotoThin{\LARGE{\rcvjobtitle}}\\
   	\end{flushleft}
   \end{minipage}
   \begin{minipage}{0.5\linewidth}
@@ -226,7 +227,7 @@
   	\begin{flushright}
   		\textcolor{\HeadingColour}{\robotoThin{\textbf{\Huge{\rcvname}}}}\\
         \smallskip
-  		\robotoThin{\LARGE{\rcvjobtitle}}\\ 
+  		\robotoThin{\LARGE{\rcvjobtitle}}\\
   	\end{flushright}
   \end{minipage}
 
@@ -236,7 +237,7 @@
  \IfEqCase{\HeaderAlignment}{
  	{flushleft}{\HeaderRightContact}
  	{flushright}{\HeaderLeftContact}
- } 
+ }
 }
 
 \newcommand{\HeaderLeftImage}{
@@ -249,8 +250,8 @@
 		\begin{flushright}
 			\textcolor{\HeadingColour}{\robotoThin{\textbf{\Huge{\rcvname}}}}\\
             \smallskip
-			\robotoThin{\LARGE{\rcvjobtitle}}\\ 
-			
+			\robotoThin{\LARGE{\rcvjobtitle}}\\
+
 			\smallskip
 			\ifdefempty{\rcvmobileno}%
 			{
@@ -275,8 +276,8 @@
 					%if home number and mobile number defined
 					\robotoThin{\normalsize{\textcolor{\HeadingColour}{\Mobilefone}\ \rcvmobileno\ {\textcolor{\HeadingColour}{\Telefon}\ \rcvhomeno\\}}}
 				}
-			}	
-			
+			}
+
 			\ifdefempty{\rcvemailaddr}%
 			{
 				\ifdefempty{\rcvwebaddr}%
@@ -309,8 +310,8 @@
 		\begin{flushleft}
 			\textcolor{\HeadingColour}{\robotoThin{\textbf{\Huge{\rcvname}}}}\\
             \smallskip
-			\robotoThin{\LARGE{\rcvjobtitle}}\\ 
-			
+			\robotoThin{\LARGE{\rcvjobtitle}}\\
+
 			\smallskip
 			\ifdefempty{\rcvmobileno}%
 			{
@@ -335,8 +336,8 @@
 					%if home number and mobile number defined
 					\robotoThin{\normalsize{\textcolor{\HeadingColour}{\Mobilefone}\ \rcvmobileno\ {\textcolor{\HeadingColour}{\Telefon}\ \rcvhomeno\\}}}
 				}
-			}	
-			
+			}
+
 			\ifdefempty{\rcvemailaddr}%
 			{
 				\ifdefempty{\rcvwebaddr}%
@@ -374,10 +375,10 @@
 \def\rcvimageloc{}
 
 % Set up use of image
-\newcommand{\setImage}[1]{  
+\newcommand{\setImage}[1]{
   \IfEq {#1}{}{
     \togglefalse{useImage}
-    \def\rcvimageloc{}  
+    \def\rcvimageloc{}
   }
   {
     \toggletrue{useImage}
@@ -403,7 +404,7 @@
 
 % Display header
 \newcommand{\showHeader}{
- 
+
  \hypersetup
  {
  	pdftitle = {CV for \rcvname},
@@ -412,14 +413,14 @@
  	pdfkeywords = {CV, curriculum, vitae, resume, \rcvname, \rcvjobtitle},
  	pdfproducer = {Resume \ClassVersion\ template written by Philip Stone}
  }
-  
+
  \iftoggle{useImage}%
  {
   % Image present
   \IfEqCase{\HeaderAlignment}{
   	{flushleft}{\HeaderRightImage}
   	{flushright}{\HeaderLeftImage}
-  } 
+  }
  }
  {
   % Image not present
@@ -458,10 +459,6 @@
 	\end{multicols}
 }
 
-
-
-
-
 \newcommand{\addLanguages}[5]{
 	\def\sone{#1}
 	\def\stwo{#2}
@@ -480,7 +477,6 @@
 	\end{multicols}
 }
 
-
 % Set up whether job title or company printed first
 \newtoggle{jobfirst}
 \toggletrue{jobfirst}
@@ -494,13 +490,13 @@
 
 \newcommand{\newRole}[4]{
  % This displays the whole of the role information
- % including dates [1], job title [2], 
+ % including dates [1], job title [2],
  % company name [3] and role summary [4]
 
 \vspace{0.1em}
 \begin{samepage}
   \iftoggle{jobfirst}{
-   % Display job before company	
+   % Display job before company
    \noindent\begin{tabular}{@{}p{3cm} l}
      \textbf{#1}      & \textbf{#2} --- \textbf{#3}\\
    \end{tabular}
@@ -521,16 +517,16 @@
 \newcommand{\roleResponsibilities}[5]{
 	% Adds up to five responsibilities in an itemized list
 	\vspace{\baselineskip}
-	
+
 \noindent\textit{Responsibilities}
 \vspace{-1em}
-	
+
 	\def\rone{#1}
 	\def\rtwo{#2}
 	\def\rthree{#3}
 	\def\rfour{#4}
 	\def\rfive{#5}
-	
+
 	\begin{itemize}
 		\ifdefempty{\rone}{}{\item \rone}
 		\ifdefempty{\rtwo}{}{\item \rtwo}
@@ -538,24 +534,24 @@
 		\ifdefempty{\rfour}{}{\item \rfour}
 		\ifdefempty{\rfive}{}{\item \rfive}
 	\end{itemize}
-	
+
 %	\bigskip
 }
 
 \newcommand{\roleAchievements}[6]{
  % Adds up to six achievements in an itemized list
-  
+
  \def\aone{#1}
  \def\atwo{#2}
  \def\athree{#3}
  \def\afour{#4}
  \def\afive{#5}
  \def\asix{#6}
- 
+
 % \begin{samepage}
  	\vspace{-0.5em}
  	\vspace{-1em}
- 
+
  \begin{itemize}
  	\ifdefempty{\aone}{}{\item \aone}
  	\ifdefempty{\atwo}{}{\item \atwo}
@@ -567,20 +563,17 @@
 %\end{samepage}
 }
 
-
-
-
 \newcommand{\roleAchievementsthree}[3]{
  % Adds up to six achievements in an itemized list
-  
+
  \def\bone{#1}
  \def\btwo{#2}
  \def\bthree{#3}
- 
+
 % \begin{samepage}
  	\vspace{-0.5em}
  	\vspace{-1em}
- 
+
  \begin{itemize}
  	\ifdefempty{\bone}{}{\item \bone}
  	\ifdefempty{\btwo}{}{\item \btwo}
@@ -589,9 +582,6 @@
 %\end{samepage}
 }
 
-
-
-
 \newcommand{\newCourse}[4]{
 % Allows the display of a new course. Arguments are
 % [1] date, [2] course title, [3] awarding body.
@@ -599,7 +589,7 @@
 % If CompanyFirst set then awarding body will be first
 
   \iftoggle{jobfirst}{
-	% Display job before company	
+	% Display job before company
 	\begin{tabular}{@{}p{1cm} l}
 		#1      & #2 (#3)\\
 	\end{tabular}
@@ -609,7 +599,7 @@
 	\begin{tabular}{@{}p{1cm} l}
 		\textbf{#1} & \textbf{#3} (#2)\\
 	\end{tabular}
-}  
+}
 }
 
 % Recipients address
@@ -633,17 +623,121 @@
  	\today
  \end{flushright}
 
- \bigskip \bigskip
- 
+
  \noindent\recpname \\
  \ifdefempty{\recpjobtitle}{}{\recpjobtitle \\}
  \recproad \\ \recptown \\ \recpcity \\ \recppostcode
- 
- \bigskip
- 
+
+
 }
 
 % Finish letter image of signature and your name
 \newcommand{\closeletter}[1]{%
 	\includegraphics{#1}\\ \bigskip \rcvname
 	}
+
+% New commands to match the provided format
+\newcommand{\addLanguageSkills}[2]{
+	\begin{itemize}
+		\item #1 – #2
+	\end{itemize}
+}
+
+\newcommand{\addEducation}[3]{
+	\begin{itemize}
+		\item \textbf{#1} - #2 - #3
+	\end{itemize}
+}
+
+\newcommand{\addQualifications}[3]{
+	\begin{itemize}
+		\item #1
+		\item #2
+		\item #3
+	\end{itemize}
+}
+
+\newcommand{\addCurrentEmployer}[2]{
+\textbf{Current Position and Employer} -  #1 #2
+}
+
+\newcommand{\addTechnicalSkills}[7]{
+	\begin{itemize}
+		\item \textbf{Languages:} #1
+		\item \textbf{Backend:} #3
+		\item \textbf{Databases \& Data:} #4
+		\item \textbf{DevOps \& Delivery:} #5
+		\item \textbf{AI \& Machine Learning:} #6
+	\end{itemize}
+}
+
+\newcommand{\addProfessionalSummary}[1]{
+	\begin{itemize}
+		\item #1
+	\end{itemize}
+}
+
+\newcommand{\addProfessionalExperience}[3]{
+	\begin{itemize}
+		\item \textbf{#1 – #2} \quad #3
+	\end{itemize}
+}
+
+\newcommand{\addProject}[9]{
+	\begin{itemize}
+		\item \textbf{#1}
+		\item \textbf{Technologies:} #2
+		\item #3
+		\item \textbf{Roles and responsibilities:}
+		\begin{itemize}
+			\item #4
+			\item #5
+			\item #6
+		\end{itemize}
+	\end{itemize}
+}
+
+% Simple two-column layout using minipage (no paracol needed)
+% Compact section heading for left column
+\newcommand{\compactHeading}[1]{
+	\vspace{0.8em}
+	\noindent\textcolor{\HeadingColour}{\robotoThin{\textbf{\large{#1}}}}
+	\vspace{0.1em}
+	\hrule
+	\vspace{0.5em}  % Increased from 0.3em
+}
+
+
+% Compact education entry
+\newcommand{\compactEducation}[3]{
+	\textbf{#2} \\
+	\textit{#3} \\
+	#1
+	\vspace{0.5em}
+}
+
+% Compact role
+\newcommand{\compactRole}[4]{
+	\vspace{0.3em}
+	\noindent\textbf{#2} \\
+	\textit{#3} | #1 \\
+	\vspace{0.2em}
+	\rmfamily #4
+	\vspace{0.3em}
+}
+
+% Compact achievements
+\newcommand{\compactAchievements}[4]{
+	\def\aone{#1}
+	\def\atwo{#2}
+	\def\athree{#3}
+	\def\afour{#4}
+
+	\vspace{-0.3em}
+	\begin{itemize}[leftmargin=*, itemsep=1pt, topsep=2pt]
+		\ifdefempty{\aone}{}{\item \aone}
+		\ifdefempty{\atwo}{}{\item \atwo}
+		\ifdefempty{\athree}{}{\item \athree}
+		\ifdefempty{\afour}{}{\item \afour}
+	\end{itemize}
+}
